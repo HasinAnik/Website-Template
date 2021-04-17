@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(68, 68, 68);
+    color: white;
+}
+
+.intro{
+    height: 50px;
+    margin-top: 0px;
+}
+
+.logo{
+    margin: 50px;
+    padding-top: 30px;
+}
+
+.menu ul{
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+}
+
+
+
+.menu li{
+    display: block;
+    margin: 10px 10px;
+}
