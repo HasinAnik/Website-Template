@@ -8,96 +8,113 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="intro">
-        <!-- this is the top part with logo and menus -->
-        <h4 class="logo">LogoText</h4>
-    </header>
-
-    <nav class="menu">
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Work</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
+    <section class="top-part">
+        <header class="intro">
+            <!-- this is the top part with logo and menus -->
+            <h4 class="logo">LogoText</h4>
+        </header>
+    
+        <nav class="menu">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Work</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </section>
+    
 
     <main>
-        <section>
+        <section class>
             <!-- this is the middle section with the pic, headings, and action items -->
-            <figure>
+            <figure class="profile-image">
                 <img src="image/person.jfif" alt="My image">
             </figure>
-            <h1>This is the place where the main tagline comes</h1>
-            <h4>This is the place where the sub tagline comes...and it should be a subheading</h4>
 
-            <!-- this is the two action items -->
-            <p>action1</p>
-            <p>action2</p>
+            <div class="titles">
+                <h1>This is the place where the <br> main tagline comes</h1>
+                <h4>This is the place where the sub tagline comes...and it should be a subheading</h4>
+            </div>
+            
+            <div class="action-buttons">
+                <!-- this is the two action items -->
+                <button class="action1">action1</button>
+                <button class="action2">action2</button>
+            </div>
         </section>
 
-        <section>
+        <section class="aboutme-page">
             <!-- this is the middle section, where is another image and about me -->
-            <figure>
+            <figure class="buildings-image">
                 <img src="image/building.JPG" alt="High-rise buildings">
             </figure>
 
-            <h3>ABOUT ME</h3>
-            <p>This is the place where the sub tagline comes...and it should be a subheading.This is the place where
+            <div class="aboutme">
+                <h3>ABOUT ME</h3>
+                <p>This is the place where the sub tagline comes...and it should be a subheading.This is the place where
                 the sub tagline comes...and it should be a subheading.This is the place where the sub tagline
                 comes...and it should be a subheading.This is the place where the sub tagline comes...and it should be
                 a subheading.</p>
+            </div>
         </section>
 
         <section>
             <!-- Our work section -->
-            <h3>OUR WORKS</h3>
-            <figure>
-                <img src="image/Project1.JPG" alt="Project 1">
-                <figcaption>Project 1</figcaption>
-            </figure>
-            <figure>
-                <img src="image/Project2.JPG" alt="Project 2">
-                <figcaption>Project 2</figcaption>
-            </figure>
-            <figure>
-                <img src="image/Project3.JPG" alt="Project 3">
-                <figcaption>Project 3</figcaption>
-            </figure>
-            <figure>
-                <img src="image/Project4.JPG" alt="Project 4">
-                <figcaption>Project 4</figcaption>
-            </figure>
-            <figure>
-                <img src="image/Project1.JPG" alt="Project 5">
-                <figcaption>Project 5</figcaption>
-            </figure>
-            <figure>
-                <img src="image/Project6.JPG" alt="Project 6">
-                <figcaption>Project 6</figcaption>
-            </figure>
+            <h3 class="project-header">OUR WORKS</h3>
+            <div class="projects">
+                <figure>
+                    <img class="project-image" src="image/Project1.JPG" alt="Project 1">
+                    <div>
+                        <figcaption>Project 1</figcaption>
+                    </div>
+                </figure>
+                <figure>
+                    <img class="project-image" src="image/Project2.JPG" alt="Project 2">
+                    <figcaption>Project 2</figcaption>
+                </figure>
+                <figure>
+                    <img class="project-image" src="image/Project3.JPG" alt="Project 3">
+                    <figcaption>Project 3</figcaption>
+                </figure>
+                <figure>
+                    <img class="project-image" src="image/Project4.JPG" alt="Project 4">
+                    <figcaption>Project 4</figcaption>
+                </figure>
+                <figure>
+                    <img class="project-image" src="image/Project1.JPG" alt="Project 5">
+                    <figcaption>Project 5</figcaption>
+                </figure>
+                <figure>
+                    <img class="project-image" src="image/Project6.JPG" alt="Project 6">
+                    <figcaption>Project 6</figcaption>
+                </figure>
+            </div>
         </section>
 
-        <section>
+        <section class="contact-us">
             <!-- Contact Us form -->
             <h3>CONTACT US</h3>
             <form action="#" method="POST">
-                <label for="name">First Name </label><input type="text" name="first_name" id="first_name">
-                <label for="name">Last Name </label><input type="text" name="last_name" id="last_name"><br><br>
-                <label for="number">Phone Number </label><input type="tel" name="number" id="number"><br><br>
-                <label for="email">Email </label><input type="email" name="email" id="email"><br><br>
+                <div class="name-section">
+                    <label for="name">First Name </label><input type="text" name="first_name" id="first_name">
+                    <label for="name">Last Name </label><input type="text" name="last_name" id="last_name">
+                </div>
+                <br>
+                <label for="number">Phone Number </label><input type="tel" name="number" id="number"><br>
+                <label for="email">Email </label><input type="email" name="email" id="email"><br>
                 
                 <label for="project"> Comments </label><br>
-                <textarea name="project" id="project"></textarea><br><br>
-                <input type="submit" value="submit">
+                <textarea name="project" id="project"></textarea><br>
+                <input type="submit" value="submit" class="submit">
             </form>
         </section>
     </main>
 
     <footer>
         <h4>LogoText</h4>
-
-        <div>
+        
+        <div class="outro-section">
             <h5>Address</h5>
             <p>CHEKKULATHU HOUSE </p>
             <p>MANGARATHOPPU</p>
@@ -105,7 +122,7 @@
             <p>THIRUVANANTHAPURAM</p>
         </div>
         <br>
-        <div>
+        <div class="outro-section">
             <h5>Address</h5>
             <p>CHEKKULATHU HOUSE </p>
             <p>MANGARATHOPPU</p>
@@ -113,13 +130,14 @@
             <p>THIRUVANANTHAPURAM</p>
         </div>
         <br>
-        <div>
+        <div class="outro-section">
             <h5>Address</h5>
             <p>CHEKKULATHU HOUSE </p>
             <p>MANGARATHOPPU</p>
             <p>PAPPANAMCODE P O </p>
             <p>THIRUVANANTHAPURAM</p>
         </div>
+    
     </footer>
 </body>
 </html>

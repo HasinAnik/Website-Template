@@ -1,24 +1,11 @@
-/* this will have 0 magin and padding everywhere */
-/* *{    
-    margin: 0;
-    padding: 0;
-} */
-
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-
 body{
     background-color: rgb(0, 0, 0);
     color: white;
-    font-family: 'Jost', sans-serif;
-
     /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 
 /* --------------------------------Top part of the page ------------------------------------- */
 .top-part{
-   
-    /* width: 100vw;
-    height: 5vh; */
     z-index: 2; /* helps with the background and foreground position */ 
     position: fixed;
     width: 100%;
@@ -44,6 +31,7 @@ body{
     /* padding-top: 5px; */
     font-weight: 1000;
     font-size: 20px;
+    top: 10%;
 }
 
 /* -------------------------------------------------------Menu--------------------------------------------------------- */
@@ -80,7 +68,6 @@ body{
 
 h1{
     font-size: 40px;
-    font-weight: 300;
 }
 
 .titles h4{
@@ -106,12 +93,10 @@ h1{
 }
 
 .action1{
-    transition: 0.3s ease-in;
     background-color: cyan;
 }
 
 .action2{
-    transition: 0.3s ease-in;
     background-color: rgb(68, 68, 68);
     color: white;
 }
@@ -162,22 +147,15 @@ h3{
 }
 
 .projects{
-    /* display: flex;
+    display: flex;
     justify-content:center;
-    flex-wrap:wrap; */
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column: 5px;
-    padding: 50px;
-    /* grid-template-rows: 1fr 1fr; */
-    
+    flex-wrap:wrap;
   
 }
 
 .project-image{
-    width: 100%;
-    
+    width: 300px;
+    height: 200px;
 }
 
 .projects figcaption{
@@ -191,17 +169,10 @@ h3{
 
 /* -----------------------------------------------------Contact Us Page------------------------------------------------- */
 
-.name-section{
-    display: grid;
-    /* grid-template-columns: 1fr 1fr; */
-}
-
-
 .contact-us{
     background-color: rgb(37, 37, 37);
     margin-left: -10px;
     margin-right: -10px; 
-    padding-bottom: 20px;
 }
 
 .contact-us h3{
@@ -243,7 +214,7 @@ h3{
     width: 30%;
     background-color: cyan;
     border: none;
-    /* margin-bottom: 20px; */
+    /* margin-bottom: 50px; */
 }
 
 /* ----------------------------------------------------Footer----------------------------------------------- */
@@ -264,7 +235,3 @@ footer{
     font-size: small;
     color: rgb(126, 125, 125);
 }
-
-
-
-
