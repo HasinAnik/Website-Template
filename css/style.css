@@ -10,55 +10,53 @@ body{
     background-color: rgb(0, 0, 0);
     color: white;
     font-family: 'Jost', sans-serif;
-
-    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 
 /* --------------------------------Top part of the page ------------------------------------- */
 .top-part{
-   
-    /* width: 100vw;
-    height: 5vh; */
     z-index: 2; /* helps with the background and foreground position */ 
     position: fixed;
     width: 100%;
-    height: 50px;
     margin-top: -20px;
     margin-left: -10px;
-    margin-right: -10px;
+    /* margin-right: -10px; */
     background-color: rgb(44, 44, 44);
-    opacity: 100%;
+    display: flex;
     /* padding: 1rem; */
 }
 
-.top-part:hover{
-    transform: scale(1.01);
-    background-color: rgb(58, 58, 58);
-}
 
 /* -----------------------------------------------------Logo------------------------------------------------------ */
 
+.intro{ /* use the flex */ 
+    flex: 2;   
+}
+
+.menu{ /* use the flex */
+    flex: 1;
+}
+
 .logo{
-    margin: 20px;
-    margin-left: 80px;
-    /* padding-top: 5px; */
     font-weight: 1000;
     font-size: 20px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    /* display: inline; */
 }
 
 /* -------------------------------------------------------Menu--------------------------------------------------------- */
 
 .menu ul{
-    margin-left: 700px;
+    /* margin-left: */
     list-style-type: none;
-    position: absolute;
-    right: 10%;
-    top: 10%;
+    /* margin-top: -50px; */
+
 }
 
 .menu ul li{
     display: inline;
-    margin: 20px 20px;
+    margin: 10px 10px;
 }
 
 /* --------------------------------------------------Top part end------------------------------------------------------- */
@@ -66,16 +64,25 @@ body{
 
 
 /* -----------------------------------------------------Profile Page------------------------------------------------- */
+.homepage{
+    display:inline;
+}
 
 .profile-image{
     margin-left: 550px;
     padding-top: 30px;
 }
 
-.titles{
+.titles{/* try with background image */
+
+    /* padding-bottom: 200px; */
+    
+
     position: absolute;
     margin-left: 150px;
-    top: 30%;
+    top: 25%;
+
+    /* margin-bottom: 0px; */
 }
 
 h1{
@@ -92,9 +99,15 @@ h1{
 /* ---------------------------------------------Action boxes-------------------------- */
 
 .action-buttons{
-    position:absolute;
+    /* position:absolute;
     margin-left: 150px;
-    top: 65%;
+    top: 65%; */
+
+    /* margin-bottom: 300px; */
+    margin-top: -150px;
+    margin-left: 150px;
+    margin-bottom: 100px;
+    width: fit-content;
 }
 
 .action-buttons button{
@@ -130,6 +143,8 @@ h1{
     background-color: rgb(37, 37, 37);
     margin-left: -10px;
     margin-right: -10px;
+    width: 100vw;
+    /* height: 450px; */
 }
 
 .buildings-image{
@@ -137,16 +152,18 @@ h1{
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 120px;
+    /* z-index: -1; */
 }
 
 .aboutme{
-    position: absolute;
+    /* position: absolute; */
+    position: relative;
     background-color: rgb(40, 40, 40);
     width: 55%;
-    height: 190px;
-    margin-right: 500px;
-    top: 700px;
-    left: 350px;
+    height: 200px;
+    margin-left: 400px;
+    /* margin-top: -320px; */
+   
 }
 
 .aboutme h3, p{
@@ -157,8 +174,11 @@ h1{
 
 /* --------------------------------------------------Project page-------------------------------------------- */
 
-h3{
+.project-header{
     text-align: center;
+    /* margin-top: 20px; */
+    padding-top: 10px;
+    margin-bottom: -30px;
 }
 
 .projects{
@@ -170,6 +190,8 @@ h3{
     grid-template-columns: 1fr 1fr 1fr;
     grid-column: 5px;
     padding: 50px;
+    margin-bottom: -20px;
+    justify-content: center;
     /* grid-template-rows: 1fr 1fr; */
     
   
@@ -177,16 +199,15 @@ h3{
 
 .project-image{
     width: 100%;
-    
 }
 
 .projects figcaption{
     text-align: center;
-    margin-top: -5px;
+    margin-top: -10px;
     padding-top: 10px;
     height: 30px;
     background-color: rgb(40, 40, 40);
-    background-position: 30px;
+    /* background-position: 30px; */
 }
 
 /* -----------------------------------------------------Contact Us Page------------------------------------------------- */
@@ -233,9 +254,7 @@ h3{
     width: 105%;
     height: 100px;
     display:block;
-    /* border-radius: 5px; */
     background-color: rgb(44, 44, 44);
-    /* border-color: rgb(40, 40, 40); */
     border: none;
 }
 
@@ -243,21 +262,21 @@ h3{
     width: 30%;
     background-color: cyan;
     border: none;
-    /* margin-bottom: 20px; */
 }
 
 /* ----------------------------------------------------Footer----------------------------------------------- */
 footer h4{
-    position: absolute;
-    margin-right: 1000px;
-    margin-top: 100px;
+    
+    margin-right: 100px;
     font-size: x-large;
+    padding-top: 50px;
 }
 
 footer{
     display: flex;
     justify-content:center;
-    flex-wrap:wrap;
+    /* flex-wrap:wrap; */
+    /* margin-left: 100px; */
 }
 
 .outro-section p{
